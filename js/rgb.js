@@ -2,9 +2,9 @@
   'use strict';
 
   var colors = {
-      red:   document.getElementById('redF'),
-      green: document.getElementById('greenF'),
-      blue:  document.getElementById('blueF')
+      red:   document.getElementById('red0'),
+      green: document.getElementById('green0'),
+      blue:  document.getElementById('blue0')
   };
 
   document.body.addEventListener('click', function(event) {
