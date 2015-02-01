@@ -13,6 +13,7 @@
     if(el.classList.contains('square')) {
       square = el;
     }
+
     if(square) {
       var rowColor = square.parentElement.id;
       if(colors[rowColor]) {
@@ -20,8 +21,8 @@
       }
       colors[rowColor] = square;
       square.classList.add('selected');
+      setColor();
     }
-    setColor();
   });
 
   function setColor() {
@@ -30,6 +31,7 @@
       hex += colors[col].id.charAt(colors[col].id.length - 1);
       hex += colors[col].id.charAt(colors[col].id.length - 1);
     }
+
     document.getElementById('mixedColor').style.background = hex;
     document.getElementById('rgbv').innerHTML = getRGB(hex);
     document.getElementById('hex').innerHTML = 'Hex: ' + hex;
