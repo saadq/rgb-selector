@@ -31,7 +31,6 @@
       hex += colors[col].id.charAt(colors[col].id.length - 1);
       hex += colors[col].id.charAt(colors[col].id.length - 1);
     }
-
     document.getElementById('mixedColor').style.background = hex;
     document.getElementById('rgbv').innerHTML = getRGB(hex);
     document.getElementById('hex').innerHTML = 'Hex: ' + hex;
